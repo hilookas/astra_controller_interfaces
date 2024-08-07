@@ -14,6 +14,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/JointGroupCommand.msg"
   "srv/ReadConfig.srv"
   "srv/WriteConfig.srv"
   "srv/ReadConfigFloat.srv"
