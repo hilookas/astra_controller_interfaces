@@ -16,11 +16,7 @@ find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/JointGroupCommand.msg"
-  "srv/ReadConfig.srv"
-  "srv/WriteConfig.srv"
-  "srv/ReadConfigFloat.srv"
-  "srv/WriteConfigFloat.srv"
+  "msg/JointCommand.msg"
   DEPENDENCIES 
     std_msgs
 )
